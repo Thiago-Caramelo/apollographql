@@ -1,0 +1,25 @@
+{
+  "name": "apollographql",
+  "version": "1.0.0",
+  "description": "GraphQL Server with Express built on top of apollo-server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thiago-Caramelo/apollographql.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thiago-Caramelo/apollographql/issues"
+  },
+  "homepage": "https://github.com/Thiago-Caramelo/apollographql#readme",
+  "dependencies": {
+    "apollo-server-express": "^2.3.1",
+    "express": "^4.16.4",
+    "graphql": "^14.0.2",
+    "graphql-import": "^0.7.1"
+  }
+}
