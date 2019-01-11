@@ -2,13 +2,12 @@ const express = require('express')
 const { ApolloServer, gql } = require('apollo-server-express')
 const { importSchema } = require('graphql-import')
 
-// Construct a schema, using GraphQL schema language
+// Construct a schema, using GraphQL schema language file
 const typeDefs = importSchema('schema.graphql')
 
 // Provide resolver functions for your schema fields
 const resolvers = {
   Query: {
-    hello: () => 'Hello world!',
     count: () => 0,
   }
 };
