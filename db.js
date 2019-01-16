@@ -31,9 +31,18 @@ const deleteTweet = (id) => {
   return false
 }
 
+const updateTweet = (id, body) => {
+  if (tweets[id]) {
+    tweets[id].body = body
+    return tweets[id]
+  }
+  return null
+}
+
 module.exports = {
   findTweet,
   findAllTweets,
   createTweet,
   deleteTweet,
+  updateTweet,
 }

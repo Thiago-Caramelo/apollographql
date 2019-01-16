@@ -1,4 +1,4 @@
-const { findTweet, findAllTweets, createTweet, deleteTweet } = require('./db')
+const { findTweet, findAllTweets, createTweet, deleteTweet, updateTweet } = require('./db')
 
 module.exports = {
   Query: {
@@ -8,5 +8,6 @@ module.exports = {
   Mutation: {
     createTweet: (_, { body }) => createTweet(body),
     deleteTweet: (_, { id }) => deleteTweet(id),
+    updateTweet: (_, { id, body }) => updateTweet(id, body),
   }
 }

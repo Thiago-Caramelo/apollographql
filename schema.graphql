@@ -9,8 +9,7 @@ type Query {
 }
 # schema's mutation:
 type Mutation {
-    createTweet (
-        body: String
-    ): Tweet
+    createTweet(body: String): Tweet
     deleteTweet(id: ID!) : Boolean
+    updateTweet(id: ID!, body: String!) : Tweet
 }
