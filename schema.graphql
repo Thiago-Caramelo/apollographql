@@ -1,3 +1,16 @@
-  type Query {
-    count: Int
-  }
+type Tweet {
+    id: ID!
+    body: String
+}
+# schema's query
+type Query {
+    tweet(id: ID!): Tweet
+    tweets : [Tweet] 
+}
+# schema's mutation:
+type Mutation {
+    createTweet (
+        body: String
+    ): Tweet
+    deleteTweet(id: ID!): Tweet
+}
