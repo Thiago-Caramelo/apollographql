@@ -23,8 +23,17 @@ const createTweet = (body) => {
   return newTweet
 }
 
+const deleteTweet = (id) => {
+  if (tweets[id]) {
+    delete tweets[id]
+    return true
+  }
+  return false
+}
+
 module.exports = {
   findTweet,
   findAllTweets,
   createTweet,
+  deleteTweet,
 }

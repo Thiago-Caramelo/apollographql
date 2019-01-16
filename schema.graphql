@@ -12,5 +12,5 @@ type Mutation {
     createTweet (
         body: String
     ): Tweet
-    deleteTweet(id: ID!): Tweet
+    deleteTweet(id: ID!) : Boolean
 }
