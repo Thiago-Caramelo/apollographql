@@ -1,7 +1,11 @@
-// Provide resolver functions for your schema fields
 module.exports = {
   Query: {
-    tweet: () => 0,
+    tweet: (id) => {
+      debugger
+      return {
+        id
+      }
+    },
     tweets: () => []
   },
   Mutation: {

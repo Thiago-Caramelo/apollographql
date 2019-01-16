@@ -3,7 +3,6 @@ const { ApolloServer } = require('apollo-server-express')
 const { importSchema } = require('graphql-import')
 const resolvers = require('./resolvers')
 
-// Construct a schema, using GraphQL schema language file
 const typeDefs = importSchema('schema.graphql')
 
 const server = new ApolloServer({ typeDefs, resolvers })
