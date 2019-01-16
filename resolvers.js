@@ -1,12 +1,9 @@
+const { findTweet, findAllTweets } = require('./db')
+
 module.exports = {
   Query: {
-    tweet: (id) => {
-      debugger
-      return {
-        id
-      }
-    },
-    tweets: () => []
+    tweet: (_, { id }) => findTweet(id),
+    tweets: () => findAllTweets()
   },
   Mutation: {
     createTweet: () => undefined,
