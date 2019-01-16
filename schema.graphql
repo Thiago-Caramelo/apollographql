@@ -1,6 +1,6 @@
 type Tweet {
     id: ID!
-    body: String
+    body: String!
 }
 # schema's query
 type Query {
